@@ -231,7 +231,7 @@ Les emails sont écrits dans `storage/logs/laravel.log`
 MAIL_MAILER=log
 ```
 
-## 📁 Structure du Projet
+## 📁 Structure du Projet Ndaaa
 
 ```
 app/

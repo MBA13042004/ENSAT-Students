@@ -1,4 +1,4 @@
-# ENSAT Students - Gestion des Étudiants A
+# ENSAT Students - Gestion des Étudiants A A
 
 Application Laravel 12 de gestion des étudiants avec authentification Firebase (Email/Password + Google Sign-In), rôles (Admin/Student), et interface moderne Tailwind CSS.
 
@@ -11,7 +11,7 @@ Vérifiez rapidement si SQLite est activé:
 php -r "echo extension_loaded('pdo_sqlite') ? 'OK' : 'PDO SQLite NOT enabled - See SETUP-DATABASE.md';"
 ```
 
-## 🚀 Fonctionnalités Ndaaaaaaaaa
+## 🚀 Fonctionnalités Ndaaaaaaaaaaaaaaaaaaaa
 
 - **Authentification Firebase**
   - Inscription et connexion par email/password

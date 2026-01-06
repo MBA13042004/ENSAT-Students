@@ -60,7 +60,7 @@ New-Item -Path "storage\app\firebase" -ItemType Directory -Force
 # storage/app/firebase/serviceAccountKey.json
 ```
 
-### 3. Activer Google Sign-In hahahahaaaaaaaaaaaaaaa
+
 
 - Firebase Console → **Authentication** → **Sign-in method**
 - Activez **Email/Password** ✅

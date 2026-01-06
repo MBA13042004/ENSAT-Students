@@ -79,7 +79,7 @@ php artisan config:clear
 php artisan migrate:fresh --seed
 ```
 
-## ✅ Continuer l'installation hhhhhhhh
+## ✅ Continuer l'installation 
 
 Une fois SQLite activé (ou MySQL configuré), exécutez:
 

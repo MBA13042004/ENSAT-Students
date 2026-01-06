@@ -13,7 +13,7 @@ php -r "echo extension_loaded('pdo_sqlite') ? 'OK' : 'PDO SQLite NOT enabled - S
 
 
 
-- **Authentification Firebase** 
+- **Authentification Firebase aaaa** 
   - Inscription et connexion par email/password
   - Connexion Google (OAuth2)
   - Réinitialisation de mot de passe

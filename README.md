@@ -2,7 +2,7 @@
 
 Application Laravel 12 de gestion des étudiants avec authentification Firebase (Email/Password + Google Sign-In), rôles (Admin/Student), et interface moderne Tailwind CSS.
 
-## ⚠️ IMPORTANT - Avant de commencer
+## ⚠️ IMPORTANT - Avant de commencer Ndaa
 
 **PDO SQLite doit être activé dans votre PHP.** Si vous obtenez une erreur de connexion à la base de données, consultez **[SETUP-DATABASE.md](SETUP-DATABASE.md)** pour activer l'extension ou configurer MySQL.
 

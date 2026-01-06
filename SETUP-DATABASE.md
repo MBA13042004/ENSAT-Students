@@ -6,7 +6,7 @@ L'extension `pdo_sqlite` n'est pas activée dans votre installation PHP.
 
 ## Solution (Windows)
 
-### 1. Trouver votre fichier php.ini
+### 1. Trouver votre fichier php.ini hahaha
 
 ```powershell
 php --ini
@@ -79,7 +79,7 @@ php artisan config:clear
 php artisan migrate:fresh --seed
 ```
 
-## ✅ Continuer l'installation
+## ✅ Continuer l'installation hhhhhhhh
 
 Une fois SQLite activé (ou MySQL configuré), exécutez:
 

@@ -1,4 +1,4 @@
-# ENSAT Students - Gestion des Étudiants
+# ENSAT Students - Gestion des Étudiants A
 
 Application Laravel 12 de gestion des étudiants avec authentification Firebase (Email/Password + Google Sign-In), rôles (Admin/Student), et interface moderne Tailwind CSS.
 

@@ -60,7 +60,7 @@ DB_CONNECTION=sqlite
 # Le fichier database.sqlite est déjà créé
 ```
 
-### 3. Générer la clé d'application (si pas déjà fait)
+### 3. Générer la clé d'application (si pas déjà fait) Ndaaa
 
 ```bash
 php artisan key:generate
@@ -309,5 +309,6 @@ Application développée pour ENSAT (École Nationale des Sciences Appliquées d
 **Auteur**: Antigravity AI
 **Date**: Décembre 2025
 **Version**: 1.0.0
-#   E N S A T - S t u d e n t s  
+#   E N S A T - S t u d e n t s 
+ 
  

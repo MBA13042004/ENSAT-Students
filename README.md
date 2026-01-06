@@ -11,7 +11,7 @@ Vérifiez rapidement si SQLite est activé:
 php -r "echo extension_loaded('pdo_sqlite') ? 'OK' : 'PDO SQLite NOT enabled - See SETUP-DATABASE.md';"
 ```
 
-## 🚀 Fonctionnalités 
+## 🚀 Fonctionnalités  Ndaaaaa
 
 - **Authentification Firebase** 
   - Inscription et connexion par email/password

@@ -6,7 +6,7 @@
 ✅ Composer  
 ✅ Node.js & npm
 
-## 📦 Installation Express
+## 📦 Installation Express Ndaaaaa
 
 ```powershell
 # 1. Installer les dépendances
@@ -60,7 +60,7 @@ New-Item -Path "storage\app\firebase" -ItemType Directory -Force
 # storage/app/firebase/serviceAccountKey.json
 ```
 
-### 3. Activer Google Sign-In
+### 3. Activer Google Sign-In hahahaha
 
 - Firebase Console → **Authentication** → **Sign-in method**
 - Activez **Email/Password** ✅

@@ -34,12 +34,68 @@ php -r "echo extension_loaded('pdo_sqlite') ? 'OK' : 'PDO SQLite NOT enabled - S
 
 ## 📋 Prérequis
 
+### Installation Locale
 - **PHP** 8.2 ou supérieur
 - **Composer** 2.x
 - **Node.js** 18.x ou supérieur et npm
 - **SQLite** (inclus avec PHP sur Windows)
 
-## 🔧 Installation
+### Installation avec Docker (Recommandé) 🐳
+- **Docker** 20.10+ et **Docker Compose** 2.0+
+- Aucune installation PHP/Composer/Node.js requise!
+
+---
+
+## 🐳 Déploiement Docker (Recommandé)
+
+La méthode la plus simple et rapide pour lancer l'application!
+
+### Démarrage Rapide
+
+```bash
+# 1. Configurer Firebase (important!)
+mkdir -p storage/app/firebase
+# Placez votre serviceAccountKey.json dans storage/app/firebase/
+
+# 2. Lancer l'application
+docker-compose up -d
+
+# 3. Voir les logs
+docker-compose logs -f
+```
+
+**C'est tout!** L'application sera accessible sur: **http://localhost:8080**
+
+### Connexion Admin
+- **Email**: `admin@ensat.ma`
+- **Mot de passe**: `admin123`
+
+### Commandes Utiles
+
+```bash
+# Arrêter l'application
+docker-compose down
+
+# Redémarrer
+docker-compose restart
+
+# Exécuter des commandes Artisan
+docker-compose exec app php artisan migrate
+docker-compose exec app php artisan cache:clear
+
+# Voir les logs en temps réel
+docker-compose logs -f app
+```
+
+📖 **Documentation complète**: Consultez **[DOCKER.md](DOCKER.md)** pour:
+- Architecture détaillée
+- Configuration avancée
+- Dépannage
+- Déploiement en production
+
+---
+
+## 🔧 Installation Locale (Alternative)
 
 ### 1. Installer les dépendances
 

@@ -5,7 +5,37 @@ on:
     branches: [ "main" ]
 
 jobs:
+  # Job 1: Simple Verification (No bugs!)
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🐘 Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite, dom, filter, json
+          coverage: none
+
+      - name: 🎼 Install Dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: 📝 Simple Key Gen
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+
+      - name: ✅ Test 1 - Composer Valid?
+        run: composer validate --strict
+
+      - name: ✅ Test 2 - App Boots?
+        run: php artisan --version
+
+  # Job 2: Build & Push
   build-and-push:
+    needs: verify
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Checkout code
@@ -23,3 +53,16 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ensat-students:latest
+
+      # Notification Step at the end
+      - name: 🔔 Notification
+        if: success()
+        run: |
+          echo "::notice title=Deployment Status::✅ CI/CD Terminé avec succès ! L'image est sur Docker Hub."
+          # Pour activer une vraie notification Discord/Slack, décommentez ci-dessous :
+          # - uses: rjstone/discord-webhook-notify@v1
+          #   with:
+          #      severity: info
+          #      username: GitHub Actions
+          #      description: Le déploiement a réussi !
+          #      webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
